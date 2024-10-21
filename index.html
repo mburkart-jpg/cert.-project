@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tattoo Appointment Form</title>
+    <link rel="stylesheet" href="styles.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <h1 id="title">Tattoo Appointment Form</h1>
+  <link rel="stylesheet" href="styles.css">
+  <p id="description">Information for your artist!</p>
+  <form id="survey-form">
+    <div>
+     <label id="name-label">
+      Name: 
+      <input placeholder="first and last name"id="name" type="text" required></input>
+      </label>
+     </div>
+       <div>
+        <label id="email-label">
+         Email: 
+      <input placeholder="email" id="email" name="email" type="email" required></label>
+     </div>
+       <div>
+        <label id="phone-label">
+         Phone: 
+      <input placeholder="phone number" id="phone" name="phone" type="text" optional></label>
+     </div>
+       <div> 
+        <label id="number-label">
+        Age: 
+     <input placeholder="select" id="number" name="age" type="number" min="18" max="100" required></label>
+      </div>
+      <fieldset></fieldset>
+        <div>
+         <label id="desired-label">
+           Desired Style:
+           <div> 
+<textarea id="style" name="style" rows="3" cols="30" placeholder="i.e. realism, american traditional etc..." required ></textarea> 
+</div>
+</label>
+      </div>
+        <div>
+         <label id="sizng-label">
+           Sizing: 
+         <div> 
+<textarea id="size" name="size" rows="3" cols="30" placeholder="how big (inches) will the design be?" required ></textarea> 
+</div>
+        <div>
+         <label id="color">
+           Color? 
+      <input id="color" name="color"></label>
+      <div>
+        <input type="radio" value="radio1" name="color">
+        <input type="radio" value="radio2" name="color">
+      </div>
+      </div>
+
+        <div>
+         <label id="coverup-label">
+           Is this a coverup?
+          <input id="coverup" name="coverup">
+          </label>
+           </div>
+           <div>
+  <input type="checkbox" value="checkbox1" name="coverup">
+  <input type="checkbox" value="checkbox2" name="coverup">  
+       </div> 
+        <div>
+         <label id="day-label">
+           Preferred day of the week:
+      <required></label>  
+      <select id="dropdown">
+        <option> Sunday </option>
+        <option> Monday </option>
+        <option> Tuesday </option>
+        <option> Wednesday </option>
+        <option> Thursday </option>
+        <option> Friday </option>
+        <option> Saturday </option>
+        </select>  
+      </div>
+        <div>
+       <label>Other infotmation:
+          <textarea id="other" name="other" rows="3" cols="30" placeholder="Any other information you would like to share..."></textarea>
+        </label>
+      </div>
+      <button id="submit">Submit</button>
+</form>
+</body>
